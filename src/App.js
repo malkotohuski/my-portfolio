@@ -1,25 +1,40 @@
-import logo from './logo.svg';
+import React from 'react';
+import Header from './Pages/Header/index';
+import Portfolio from './Pages/Portfolio/';
+import Home from './Pages/Home/index';
+import Footer from './Footer';
 import './App.css';
 
-function App() {
+
+const projects = [
+  {
+    title: 'Project 1',
+    description: 'Description for Project 1',
+    imageUrl: '',
+  },
+  {
+    title: 'Project 2',
+    description: 'Description for Project 2',
+    imageUrl: '',
+  },
+  {
+    title: 'Project 3',
+    description: 'Description for Project 3',
+    imageUrl: '',
+  },
+  // Add more projects as needed
+];
+
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Home />
+      <Portfolio projects={projects} />
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
+

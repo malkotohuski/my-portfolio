@@ -1,0 +1,25 @@
+.portfolio {
+    text-align: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px; 
+}
+
+.project {
+    box-sizing: border-box;
+    width: 30%; /* Adjust the width based on your design */
+    margin: 0 10px 20px; /* Add margin around each project */
+    padding: 15px;
+    border: 1px solid #ddd; /* Add a border for separation */
+    border-radius: 8px; /* Add rounded corners for a nicer look */
+    text-align: left; /* Adjust text alignment as needed */
+  }
+
+  .project img {
+    max-width: 100%;
+    border-radius: 4px; /* Add rounded corners for images */
+  }
+
+  h1 {
+    color: #f1f1f1;
+  }
