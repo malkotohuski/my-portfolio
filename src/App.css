@@ -16,7 +16,7 @@ h1 {
 }
 
 /* Add a bit of styling to make it more visually appealing */
-h1:hover {
+h2:hover {
   color: #ffcc00; /* Change the color on hover */
   transition: color 0.3s ease-in-out; /* Smooth transition */
 }
