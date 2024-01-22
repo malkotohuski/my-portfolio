@@ -1,14 +1,19 @@
 /* src/App.css */
 
-body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
+#root {
+  overflow-y: auto; /* Allow vertical scrolling */
   background-image: url('https://images.unsplash.com/photo-1546900703-cf06143d1239?q=80&w=2050&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Replace with your image path */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh; /* Ensure the background covers the entire viewport */
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+
 }
 
 h1 {
