@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './Pages/Header/index';
 import Portfolio from './Pages/Portfolio/';
 import Home from './Pages/Home/index';
-import Footer from './Footer';
+
 import './App.css';
 
 
@@ -22,6 +22,21 @@ const projects = [
     description: 'Description for Project 3',
     imageUrl: '',
   },
+  {
+    title: 'Project 4',
+    description: 'Description for Project 2',
+    imageUrl: '',
+  },
+  {
+    title: 'Project 5',
+    description: 'Description for Project 3',
+    imageUrl: '',
+  },
+  {
+    title: 'Project 6',
+    description: 'Description for Project 3',
+    imageUrl: '',
+  },
   // Add more projects as needed
 ];
 
@@ -31,7 +46,6 @@ const App = () => {
       <Header />
       <Home />
       <Portfolio projects={projects} />
-      <Footer />
     </div>
   );
 };
