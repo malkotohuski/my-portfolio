@@ -9,6 +9,10 @@
   height: 100vh; /* Ensure the background covers the entire viewport */
 }
 
+.App {
+  position: relative;
+}
+
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -24,4 +28,10 @@ h1 {
 h2:hover {
   color: #ffcc00; /* Change the color on hover */
   transition: color 0.3s ease-in-out; /* Smooth transition */
+}
+
+.language-switch-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
