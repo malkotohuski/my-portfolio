@@ -1,7 +1,11 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
+import engFlag from '../../images/engl-flag.png';
+import bulgFlag from '../../images/bulg-flag.png';
 
+const LanguageSwitch = () => {
+    const { t, i18n } = useTranslation();
 
-const LanguageSwitch = ({ changeLanguage, t }) => {
     const styles = {
         languageSwitchContainer: {
             display: 'flex',
@@ -13,14 +17,21 @@ const LanguageSwitch = ({ changeLanguage, t }) => {
         languageButton: {
             alignItems: 'center',
             cursor: 'pointer',
+            width: '120px',  // Фиксирана ширина на бутона
+            textAlign: 'center',  // Центриране на текста
         },
         flagImage: {
             width: '50px',
             height: '50px',
+            borderRadius: '25px'
         },
         languageText: {
             marginTop: '10px',
         },
+    };
+
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng);
     };
 
     return (
@@ -31,7 +42,7 @@ const LanguageSwitch = ({ changeLanguage, t }) => {
                     onClick={() => changeLanguage('en')}
                 >
                     <img
-                        src={require('../../images/engl-flag.png')} // Replace with the path to your English flag image
+                        src={engFlag} // Replace with the path to your English flag image
                         alt="English Flag"
                         style={styles.flagImage}
                     />
@@ -43,7 +54,7 @@ const LanguageSwitch = ({ changeLanguage, t }) => {
                     onClick={() => changeLanguage('bg')}
                 >
                     <img
-                        src={require('../../images/bulg-flag.png')} // Replace with the path to your Bulgarian flag image
+                        src={bulgFlag} // Replace with the path to your Bulgarian flag image
                         alt="Bulgarian Flag"
                         style={styles.flagImage}
                     />

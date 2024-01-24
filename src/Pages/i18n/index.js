@@ -1,24 +1,28 @@
-// i18n.js
 import i18next from 'i18next';
+import LanguageDetector from 'i18next-browser-languagedetector';
 import { initReactI18next } from 'react-i18next';
 
-const resources = {
-    en: {
-        translation: {
-            // Add English translations here
-        },
-    },
-    bg: {
-        translation: {
-            // Add Bulgarian translations here
-        },
-    },
-};
-
-i18next.use(initReactI18next).init({
-    interpolation: { escapeValue: false },
-    lng: 'en',
-    resources,
-});
+i18next
+    .use(initReactI18next)
+    .use(LanguageDetector)
+    .init({
+        fallbackLng: 'en',
+        resources: {
+            en: {
+                translation: {
+                    greeting: 'greeting',
+                    English: 'English',
+                    Bulgarian: 'Bulgarian',
+                }
+            },
+            bg: {
+                translation: {
+                    greeting: 'Привет',
+                    English: 'Английски',
+                    Bulgarian: 'Български',
+                }
+            },
+        }
+    });
 
 export default i18next;
