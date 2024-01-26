@@ -1,6 +1,5 @@
-
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
@@ -8,6 +7,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import './style.css';
 
 const Header = () => {
+
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const { t } = useTranslation();
 
@@ -15,20 +15,31 @@ const Header = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
+    const closeMenu = () => {
+        setIsMenuOpen(false);
+    };
+
+
     return (
         <div className="header">
-            {/* Другите елементи на хедера тук */}
-
             <div className="header-right">
                 <button onClick={toggleMenu} className={`menu-button ${isMenuOpen ? 'open' : ''}`}>
-                    <FontAwesomeIcon icon={faBars} />
+                    <FontAwesomeIcon size='2x' icon={faBars} />
                 </button>
                 {isMenuOpen && (
-                    <div className="dropdown-menu">
-                        <Link to="/category1" className="menu-item">
+                    <div className="dropdown-menu" onBlur={closeMenu} tabIndex={0}>
+                        <Link
+                            to="/aboutMe"
+                            className="menu-item"
+                            onClick={closeMenu}
+                        >
                             {t('Category 1')}
                         </Link>
-                        <Link to="/category2" className="menu-item">
+                        <Link
+                            to="/contacts"
+                            className="menu-item"
+                            onClick={closeMenu}
+                        >
                             {t('Category 2')}
                         </Link>
                         {/* Добави повече линкове, ако е необходимо */}
