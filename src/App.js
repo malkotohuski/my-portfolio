@@ -5,6 +5,7 @@ import Home from './Pages/Home';
 import LanguageSwitch from './Pages/LanguageSwitch';
 import i18n from 'i18next';
 import { useTranslation, Trans } from 'react-i18next';
+import rustImage from "../src/images/Rust.png"
 
 import './App.css';
 
@@ -17,9 +18,9 @@ const App = () => {
 
   const projects = [
     {
-      title: 'Project 1',
+      title: 'World of Rust',
       description: 'Description for Project 1',
-      imageUrl: '',
+      imageUrl: rustImage,
     },
     {
       title: 'Project 2',
