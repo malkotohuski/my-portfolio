@@ -2,17 +2,19 @@
     text-align: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
 .project {
-    box-sizing: border-box;
-    width: 30%; /* Adjust the width based on your design */
-    margin: 0 10px 20px; /* Add margin around each project */
+  box-sizing: border-box;
+    width: 300px; /* Променете този размер на фиксирана стойност спрямо дизайна си */
+    height: 300px; /* Променете този размер на фиксирана стойност спрямо дизайна си */
+    margin: 0 10px 20px;
     padding: 15px;
-    border: 1px solid #ddd; /* Add a border for separation */
-    border-radius: 8px; /* Add rounded corners for a nicer look */
-    text-align: left; /* Adjust text alignment as needed */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: left;
+    overflow: hidden;
   }
 
   .project img {
