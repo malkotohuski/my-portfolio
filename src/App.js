@@ -9,6 +9,7 @@ import { useTranslation } from 'react-i18next';
 import rustImage from '../src/images/Rust.png';
 import rustAppImage from '../src/images/Rust_app4.png';
 import './App.css';
+import ContactPage from './Pages/Header/Category/contacts';
 
 const App = () => {
   const { t } = useTranslation();
@@ -69,6 +70,10 @@ const App = () => {
           <Route
             path="/portfolio"
             element={<Portfolio projects={projects} />} // Pass projects to Portfolio
+          />
+          <Route
+            path="/contacts"
+            element={<ContactPage />} // Pass projects to Portfolio
           />
         </Routes>
       </div>

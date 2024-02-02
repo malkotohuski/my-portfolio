@@ -29,18 +29,18 @@ const Header = () => {
                 {isMenuOpen && (
                     <div className="dropdown-menu" onBlur={closeMenu} tabIndex={0}>
                         <Link
-                            to="/aboutMe"
+                            to="/portfolio"
                             className="menu-item"
                             onClick={closeMenu}
                         >
-                            {t('Category 1')}
+                            {t('Projects')}
                         </Link>
                         <Link
                             to="/contacts"
                             className="menu-item"
                             onClick={closeMenu}
                         >
-                            {t('Category 2')}
+                            {t('Contact us')}
                         </Link>
                         {/* Добави повече линкове, ако е необходимо */}
                     </div>
