@@ -15,7 +15,7 @@ const ContactPage = () => {
     return (
         <div className="contact-container">
             <div className="contact-header">
-                <h1>Contact Us</h1>
+                <h1 style={{ color: 'black' }}>Contact Us</h1>
                 <p>Please fill out the form below to get in touch with us.</p>
             </div>
             <form onSubmit={handleSubmit}>
