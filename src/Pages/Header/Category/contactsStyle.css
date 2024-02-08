@@ -2,7 +2,9 @@
   max-width: 600px;
   margin: 0 auto;
   padding: 50px;
-  background-color: rgba(255, 255, 255, 0.856);
+  background-color: #ffffff10;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-radius: 5px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -20,7 +22,7 @@
   .form-row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     /* Changed from 'justify-content: space-between;' */
     align-items: center;
     /* Added this line */
@@ -30,11 +32,14 @@
   label {
     margin-bottom: 10px;
     text-align: center;
+    margin-right: 25px; 
+    color: white; /* Set text color to white */
     /* Added this line */
   }
   
   .massage-row {
     display: grid !important;
+    color: white; 
   }
   
   input,
@@ -46,6 +51,7 @@
     border-radius: 5px;
     background-color: #f3f3f3;
     box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.1);
+    color: black; /* Set text color to black */
   }
   
   button[type="submit"] {
@@ -62,4 +68,8 @@
   
   button[type="submit"]:hover {
     background-color: #0055b3;
+  }
+
+  .labelName {
+    color: #f3f3f3;
   }
