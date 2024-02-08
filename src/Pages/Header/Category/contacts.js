@@ -32,7 +32,7 @@ const ContactPage = () => {
                 <div className='massage-row'>
                     <label className='labelsNames'>
                         Message:
-                        <textarea value={message} onChange={(event) => setMessage(event.target.value)} />
+                        <input className='message-input' value={message} onChange={(event) => setMessage(event.target.value)} />
                     </label>
                 </div>
                 <button type="submit">Submit</button>
