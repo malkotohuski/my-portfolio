@@ -7,11 +7,20 @@
   z-index: 2; /* Ensure the header is above other content */
 }
 
+.headers {
+  display: flex;
+  justify-content: space-between; /* Добавете justify-content за равномерно разпределение на елементите */
+  align-items: center;
+}
+
 .header-right {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  margin-right: 20px; /* Adjust margin as needed */
+}
+
+.header-left{
+  display: flex;
+  align-items: center;
 }
 
 .menu-button {

@@ -53,6 +53,11 @@
     box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.1);
     color: black; /* Set text color to black */
   }
+
+  .message-input{
+    width: 100%;
+    height: 40%;
+  }
   
   button[type="submit"] {
     display: block;
